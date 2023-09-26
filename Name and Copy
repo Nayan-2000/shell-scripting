@@ -9,11 +9,13 @@ list=$(ls)
 i=1
 for file in $list
 do
+    #renaming multiple files at once
     name="mbi190$i.txt"
     mv $file $name
     num= $(($i+1))
     i=$num
-#copying mutltile files
+
+#copying multiple files at once and saving it on a different directory
 cp /home/bif/nayan/*.txt /home/bif/indiana_jones
 
 done
