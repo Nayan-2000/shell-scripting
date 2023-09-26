@@ -1,0 +1,19 @@
+#!/bin/bash
+#enter the directory
+cd /home/bif/nayan/
+
+#save the list of files in variable
+
+list=$(ls)
+
+i=1
+for file in $list
+do
+    name="mbi190$i.txt"
+    mv $file $name
+    num= $(($i+1))
+    i=$num
+#copying mutltile files
+cp /home/bif/nayan/*.txt /home/bif/indiana_jones
+
+done
